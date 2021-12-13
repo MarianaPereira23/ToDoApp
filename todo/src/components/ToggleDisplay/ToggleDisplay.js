@@ -9,25 +9,33 @@ const ToggleDisplay = () => {
   const todoList = useSelector(state => state);
 
   const doneTodos = todoList.filter(todo => todo.done === true);
+  const shownTodos = doneTodos.filter(todo => todo.display === true);
+  const hiddenTodos = doneTodos.filter(todo => todo.display === false);
 
-  const handleClick = e => {
+  const handleHide = e => {
     e.preventDefault();
-    doneTodos.forEach(task => {
-      task.display = !task.display;
+    shownTodos.forEach(task => {
+      task.display = false;
       store.dispatch(toggleDisplay(task));
     });
-    if (doneTodos[0].display) {
-      e.target.textContent = 'Hide done tasks';
-      return;
-    }
-    e.target.textContent = 'Show done tasks';
   };
 
-  const hiddenTodos = todoList.filter(todo => todo.display === false);
+  const handleShow = e => {
+    e.preventDefault();
+    hiddenTodos.forEach(task => {
+      task.display = true;
+      store.dispatch(toggleDisplay(task));
+    });
+  };
 
   return (
-    <div className={`toggle-container ${doneTodos.length > 0 ? '' : 'hidden'}`}>
-      <button type="submit" className="toggle-container__button" onClick={handleClick}>{hiddenTodos.length > 0 ? 'Show done tasks' : 'Hide done tasks'}</button>
+    <div className="toggle-container">
+      <div className={`toggle-container__hide ${shownTodos.length > 0 ? '' : 'hidden'}`}>
+        <button className="toggle-container__button" onClick={handleHide}>Hide done tasks</button>
+      </div>
+      <div className={`toggle-container__show ${hiddenTodos.length > 0 ? '' : 'hidden'}`}>
+        <button className="toggle-container__button" onClick={handleShow}>Show done tasks</button>
+      </div>
     </div>
   );
 };

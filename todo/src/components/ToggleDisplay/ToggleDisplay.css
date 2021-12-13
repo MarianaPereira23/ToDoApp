@@ -1,8 +1,17 @@
 .toggle-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-container__hide,
+.toggle-container__show {
   background-color: rgba(253, 250, 250, 0.6);
+  width: 9rem;
   padding: 0.5rem;
   border-radius: 0.3rem;
   align-self: right;
+  margin: 0 0.5rem;
 }
 
 .toggle-container__button {
