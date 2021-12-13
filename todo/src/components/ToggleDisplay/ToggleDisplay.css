@@ -1,0 +1,20 @@
+.toggle-container {
+  background-color: rgba(253, 250, 250, 0.6);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  align-self: right;
+}
+
+.toggle-container__button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.toggle-container__button:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,31 @@
+.todo-container__todo-item {
+  width: 80%;
+  background-color: rgba(253, 250, 250, 0.6);
+  border-radius: 0.3rem;
+  margin: 0.5rem 0;
+}
+
+.todo-container__todo-item:hover {
+  cursor: pointer;
+}
+
+.todo-container__todo-title {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  word-wrap: break-word;
+}
+
+.todo-container__todo-info {
+  padding: 0 0.5rem 0.5rem;
+  font-size: 1.4rem;
+  word-wrap: break-word;
+}
+
+.done {
+  text-decoration: line-through;
+  order: 3;
+}
+
+.hidden {
+  display: none;
+}

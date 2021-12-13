@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App App snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="page-header"
+  >
+    <h1
+      className="page-title"
+    >
+      Todays Goals
+    </h1>
+  </header>
+  <section
+    className="page-container"
+  >
+    <section
+      className="form-container"
+    >
+      <form
+        className="addTodo-form"
+        onSubmit={[Function]}
+      >
+        <button
+          className="addTodo-form__add-btn"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-plus fa-w-14 add-button__icon"
+            data-icon="plus"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+        <input
+          className="addTodo-form__title"
+          placeholder="Task Title*"
+          required={true}
+          type="text"
+        />
+        <input
+          className="addTodo-form__description"
+          placeholder="Description"
+          type="textarea"
+        />
+      </form>
+    </section>
+    <div
+      className="toggle-container hidden"
+    >
+      <button
+        className="toggle-container__button"
+        onClick={[Function]}
+        type="submit"
+      >
+        Hide done tasks
+      </button>
+    </div>
+    <section
+      className="todo-container"
+    />
+  </section>
+</div>
+`;

@@ -1,0 +1,57 @@
+.form-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.editTodo-form {
+  width: 80%;
+  background-color: rgba(253, 250, 250, 0.6);
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.editTodo-form__edit-btn,
+.editTodo-form__title,
+.editTodo-form__description {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.editTodo-form__edit-btn {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-right: 1rem;
+}
+
+.editTodo-form__edit-btn:hover {
+  cursor: pointer;
+}
+
+.editTodo-form__title::placeholder,
+.editTodo-form__description::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.editTodo-form__title,
+.editTodo-form__description {
+  font-size: 1.2rem;
+}
+
+.editTodo-form__title {
+  width: 70%;
+}
+
+.editTodo-form__description {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.editTodo-form__title:focus,
+.editTodo-form__description:focus {
+  outline: none;
+}

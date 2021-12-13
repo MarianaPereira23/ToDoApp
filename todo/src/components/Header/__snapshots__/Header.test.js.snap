@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Header snapshot 1`] = `
+<header
+  className="page-header"
+>
+  <h1
+    className="page-title"
+  >
+    Todays Goals
+  </h1>
+</header>
+`;

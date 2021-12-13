@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+html {
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: url('./images/home.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+}
+
+.App {
+  height: 100vh;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.page-container {
+  max-width: 1440px;
+  min-height: 85vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+}
